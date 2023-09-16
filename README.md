@@ -32,3 +32,5 @@ ENTRYPOINT ["/usr/bin/tini", "--"]
 EXPOSE 8888
 CMD ["jupyter", "server", "--port=8888", "--no-browser", "--ip=0.0.0.0"]
 ```
+
+[官方参考文档](https://jupyter-server.readthedocs.io/en/latest/operators/public-server.html)
