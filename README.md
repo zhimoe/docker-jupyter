@@ -1,14 +1,21 @@
 # docker-jupyter-notebook
 
-## run
+## build
+
 ```shell
-docker run -p 127.0.0.1:8888:8888 notebook
+docker build -t notebook .
 ```
 
-## build
+## run
+
 ```shell
-docker build -t notebook  .
+docker run -p 8888:8888 notebook
+# or use docker compose
+docker-compose up -d
 ```
+If you want to run your services in the background, you can pass the ‍‍`-d` flag (for “detached” mode) to `docker-compose up -d` and use `docker-compose ps` to see what is currently running.
+
+
 ## notes
 
 1. password生成方式变化
